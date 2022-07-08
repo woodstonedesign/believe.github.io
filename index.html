@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Believe</title>
+    <style>
+        body{
+            background: #121113;
+            padding: 0;
+            margin: 0;
+        }
+
+        .fullscreen-video {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        }
+        .fullscreen-video video {
+        position: absolute;
+        }
+        .fullscreen-video.no-ie video {
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+            object-fit: cover;
+        }
+        .fullscreen-video.ie video {
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        transform: translate(-50%, -50%);
+        }
+        .fullscreen-video::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0);
+        }
+        .fullscreen-video .info {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        }
+        .fullscreen-video .info h1, .fullscreen-video .info p {
+        width: 100%;
+        text-align: center;
+        color: #FFF;
+        }
+
+        .fullscreen-video h1 {
+        font-size: 8vw;
+        }
+        .fullscreen-video p {
+        font-size: 5vw;
+        }
+
+        .next-content {
+        padding: 5vh;
+        text-align: center;
+        }
+        .next-content p {
+        font-size: 3vw;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="fullscreen-video no-ie" id="js-fullscreen-video">
+  
+    <video class="" autoplay="" loop="" id="video" preload="auto" muted="" playsinline="" poster="/web/assets/images/cover.jpg">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    <!-- <div class="info">
+      <h1></h1>
+     
+    </div> -->
+  </div>
+  <!-- <div class="next-content">
+    <p></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minima sunt deserunt explicabo placeat unde magnam fugit quisquam, quas quibusdam aut porro cum fuga aliquid veritatis, nostrum doloribus? Temporibus, quod.</p>
+  </div> -->
+
+      
+</body>
+</html>
